@@ -1,0 +1,22 @@
+{
+  "name": "minalear.github.io",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minalear/minalear.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/minalear/minalear.github.io/issues"
+  },
+  "homepage": "https://github.com/minalear/minalear.github.io#readme"
+}
