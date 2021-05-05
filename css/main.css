@@ -225,6 +225,8 @@ section > h2 {
 
 .project-image {
   margin-right: 10px;
+  width: 150px;
+  height: 150px;
 }
 
 .project-title {
