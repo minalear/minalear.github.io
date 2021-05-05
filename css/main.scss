@@ -5,6 +5,7 @@ $background-color: #f6f8fa;
 
 $sidebar-primary-color: $background-color;
 $sidebar-background-color: #386370;
+$sidebar-dark-background: #27444d;
 
 $profile-img-size: 120px;
 $shadow-color: rgba(0, 0, 0, 0.4);
@@ -23,6 +24,7 @@ ul {
 .site-wrapper {
   display: grid;
   grid-template-columns: 300px calc(100% - 300px);
+  min-height: 100vh;
 }
 
 /* TEMP BANNER */
@@ -120,7 +122,7 @@ ul {
 .nav-link:hover,
 .social-link:hover {
   color: $accent-color;
-  transition: 0.25s ease;
+  transition: 0.2s ease;
 }
 
 .social-links {
@@ -161,6 +163,33 @@ section > h2 {
   border-bottom: 1px solid $primary-color;
 }
 
+/* EDUCATION */
+.education-wrapper {
+  display: flex;
+}
+.education-wrapper .year-range {
+  font-style: italic;
+  min-width: 100px;
+  margin-top: 22px;
+}
+.university {
+  font-size: larger;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+.degree {
+  margin: 0;
+}
+.coursework {
+  margin-bottom: 0;
+}
+.minor-coursework {
+  font-size: small;
+  font-style: italic;
+  margin: 0;
+}
+
 /* PROJECTS */
 .projects-wrapper {
   display: flex;
@@ -169,19 +198,26 @@ section > h2 {
 }
 .project-card {
   position: relative;
-  display: block;
+  display: flex;
+  flex-direction: row;
   margin: 10px;
   box-shadow: -5px 5px 5px $shadow-color;
   background-color: #eee;
+  flex-basis: 40%;
+  min-width: 450px;
 }
 .project-details {
   margin: 10px;
 }
 .project-image {
-  float: left;
   margin-right: 10px;
 }
-
+.project-title {
+  font-weight: bold;
+}
+.project-description {
+  font-size: small;
+}
 .project-link {
   position: absolute;
   right: 0;
@@ -190,6 +226,19 @@ section > h2 {
   background-color: $sidebar-background-color;
   color: $background-color;
   margin: 10px;
-  padding: 5px;
+  padding: 8px 15px;
   float: right;
+}
+.project-link:hover {
+  background-color: $sidebar-dark-background;
+  transition: 0.2s ease;
+}
+.project-link.unavailable,
+.project-link.unavailable:hover {
+  background-color: #ccc;
+}
+
+/* CONTACT */
+.email-link {
+  font-weight: bold;
 }

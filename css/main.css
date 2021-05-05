@@ -13,6 +13,7 @@ ul {
 .site-wrapper {
   display: grid;
   grid-template-columns: 300px calc(100% - 300px);
+  min-height: 100vh;
 }
 
 /* TEMP BANNER */
@@ -123,7 +124,7 @@ ul {
 .nav-link:hover,
 .social-link:hover {
   color: #8a99af;
-  transition: 0.25s ease;
+  transition: 0.2s ease;
 }
 
 .social-links {
@@ -168,6 +169,38 @@ section > h2 {
   border-bottom: 1px solid #020202;
 }
 
+/* EDUCATION */
+.education-wrapper {
+  display: flex;
+}
+
+.education-wrapper .year-range {
+  font-style: italic;
+  min-width: 100px;
+  margin-top: 22px;
+}
+
+.university {
+  font-size: larger;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.degree {
+  margin: 0;
+}
+
+.coursework {
+  margin-bottom: 0;
+}
+
+.minor-coursework {
+  font-size: small;
+  font-style: italic;
+  margin: 0;
+}
+
 /* PROJECTS */
 .projects-wrapper {
   display: flex;
@@ -177,10 +210,13 @@ section > h2 {
 
 .project-card {
   position: relative;
-  display: block;
+  display: flex;
+  flex-direction: row;
   margin: 10px;
   box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.4);
   background-color: #eee;
+  flex-basis: 40%;
+  min-width: 450px;
 }
 
 .project-details {
@@ -188,8 +224,15 @@ section > h2 {
 }
 
 .project-image {
-  float: left;
   margin-right: 10px;
+}
+
+.project-title {
+  font-weight: bold;
+}
+
+.project-description {
+  font-size: small;
 }
 
 .project-link {
@@ -200,8 +243,23 @@ section > h2 {
   background-color: #386370;
   color: #f6f8fa;
   margin: 10px;
-  padding: 5px;
+  padding: 8px 15px;
   float: right;
+}
+
+.project-link:hover {
+  background-color: #27444d;
+  transition: 0.2s ease;
+}
+
+.project-link.unavailable,
+.project-link.unavailable:hover {
+  background-color: #ccc;
+}
+
+/* CONTACT */
+.email-link {
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=main.css.map */
