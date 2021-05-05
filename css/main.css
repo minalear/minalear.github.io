@@ -11,11 +11,15 @@ ul {
 }
 
 .site-wrapper {
-  display: grid;
-  grid-template-columns: 300px calc(100% - 300px);
-  min-height: 100vh;
+  height: 100vh;
 }
 
+@media only screen and (min-device-width: 1024px) {
+  .site-wrapper {
+    display: grid;
+    grid-template-columns: 300px calc(100% - 300px);
+  }
+}
 /* TEMP BANNER */
 .warning-banner {
   background-color: red;
@@ -41,6 +45,7 @@ ul {
   align-items: center;
   background-color: #386370;
   color: #f6f8fa;
+  padding-bottom: 20px;
 }
 
 .branding {
@@ -139,6 +144,7 @@ ul {
 .content-wrapper {
   width: 100%;
   box-shadow: -10px 0px 5px rgba(0, 0, 0, 0.4);
+  padding-bottom: 20px;
 }
 
 .content {
@@ -147,9 +153,14 @@ ul {
 }
 
 .hero {
-  margin-top: 80px;
+  padding-top: 80px;
 }
 
+@media only screen and (max-device-width: 1024px) {
+  .hero {
+    padding-top: 25px;
+  }
+}
 .hero .title {
   font-size: 3rem;
   margin: 0;
@@ -170,10 +181,11 @@ section > h2 {
 }
 
 /* EDUCATION */
-.education-wrapper {
-  display: flex;
+@media only screen and (min-width: 1024px) {
+  .education-wrapper {
+    display: flex;
+  }
 }
-
 .education-wrapper .year-range {
   font-style: italic;
   min-width: 100px;
@@ -219,6 +231,12 @@ section > h2 {
   min-width: 450px;
 }
 
+@media only screen and (max-width: 400px) {
+  .project-card {
+    min-width: 325px;
+    min-height: 200px;
+  }
+}
 .project-details {
   margin: 10px;
 }

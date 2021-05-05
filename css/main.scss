@@ -22,9 +22,13 @@ ul {
 }
 
 .site-wrapper {
-  display: grid;
-  grid-template-columns: 300px calc(100% - 300px);
-  min-height: 100vh;
+  height: 100vh;
+}
+@media only screen and (min-device-width: 1024px) {
+  .site-wrapper {
+    display: grid;
+    grid-template-columns: 300px calc(100% - 300px);
+  }
 }
 
 /* TEMP BANNER */
@@ -51,6 +55,7 @@ ul {
   align-items: center;
   background-color: $sidebar-background-color;
   color: $sidebar-primary-color;
+  padding-bottom: 20px;
 }
 .branding {
   margin-top: 100px;
@@ -137,6 +142,7 @@ ul {
 .content-wrapper {
   width: 100%;
   box-shadow: -10px 0px 5px $shadow-color;
+  padding-bottom: 20px;
 }
 .content {
   width: 80%;
@@ -144,7 +150,12 @@ ul {
 }
 
 .hero {
-  margin-top: 80px;
+  padding-top: 80px;
+}
+@media only screen and (max-device-width: 1024px) {
+  .hero {
+    padding-top: 25px;
+  }
 }
 .hero .title {
   font-size: 3rem;
@@ -164,8 +175,10 @@ section > h2 {
 }
 
 /* EDUCATION */
-.education-wrapper {
-  display: flex;
+@media only screen and (min-width: 1024px) {
+  .education-wrapper {
+    display: flex;
+  }
 }
 .education-wrapper .year-range {
   font-style: italic;
@@ -205,6 +218,12 @@ section > h2 {
   background-color: #eee;
   flex-basis: 40%;
   min-width: 450px;
+}
+@media only screen and (max-width: 400px) {
+  .project-card {
+    min-width: 325px;
+    min-height: 200px;
+  }
 }
 .project-details {
   margin: 10px;
