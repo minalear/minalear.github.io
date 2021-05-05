@@ -3,18 +3,130 @@
 
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <meta name="author" content="Trevor Fisher">
-  <meta name="description" content="Personal website for Trevor Fisher">
+  <meta name="description" content="Trevor Fisher's portfolio">
 
   <title>Trevor Fisher</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/7d1c6d5f0d.js" crossorigin="anonymous"></script>
+
+  <!-- Custom CSS -->
+  <link type="text/css" rel="stylesheet" href="css/normalize.css">
+  <link type="text/css" rel="stylesheet" href="css/main.css">
+
+  <script type="text/javascript" src="http://livejs.com/live.js"></script>
 </head>
 
 <body>
-  <h1>Trevor Fisher</h1>
-  <p>Something something hire me please.</p>
+  <div class="site-wrapper">
+    <div class="warning-banner">
+      <span>Currently creating site.  Information is not up to date.</span>
+    </div>
+    <header class="sidebar">
+      <div class="branding">
+        <div class="profile">
+          <a class="avatar" href="/">
+            <img src="img/portrait.png" alt="Profile image of Trevor Fisher">
+          </a>
+        </div>
+        <div class="id-wrapper">
+          <span class="name">Trevor Fisher</span>
+          <span class="title">Software Developer</span>
+        </div>
+      </div>
+      <nav class="navigation">
+        <ul class="site-nav">
+          <li><a class="nav-link" href="#">Home</a></li>
+          <li><a class="nav-link" href="#">Projects</a></li>
+          <li><a class="nav-link" href="#">About</a></li>
+          <li><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+        <ul class="social-links">
+          <li>
+            <a class="social-link" href="https://github.com/minalear">
+              <i class="fab fa-github fa-lg"></i>
+            </a>
+          </li>
+          <li>
+            <a class="social-link" href="https://www.linkedin.com/in/trevor-fisher-958b22107/">
+              <i class="fab fa-linkedin fa-lg"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="content-wrapper">
+      <div class="content">
+        <section class="hero">
+          <h1 class="title">Hi!  I'm Trevor Fisher.</h1>
+          <span class="subtitle">I am a software developer and recent college graduate.</span>
+        </section>
+        <section class="about">
+          <h2>About</h2>
+          <p>Trevor Fisher, graduated from the University of Central Oklahoma in May 2021, with a Bachelors of Science.  I majored in Computer Science with a minor in Mathematics.</p>
+          <p>I take great pride in the software I write and the projects I create.  I have experience writing web applications using React or Vue on top of an Express backend with MongoDB.</p>
+        </section>
+        <section class="projects">
+          <h2>Projects</h2>
+          <div class="projects-wrapper">
+            <div class="project-card">
+              <img class="project-image" src="https://via.placeholder.com/150" alt="placeholder image" />
+              <div class="project-details">
+                <span class="project-title">Project Title</span>
+                <p class="project-description">This is a brief project description.</p>
+                <a class="project-link" href="https://github.com/minalear">Repo</a>
+              </div>
+            </div>
+            <div class="project-card">
+              <img class="project-image" src="https://via.placeholder.com/150" alt="placeholder image" />
+              <div class="project-details">
+                <span class="project-title">Project Title</span>
+                <p class="project-description">This is a brief project description. This is a brief project description.</p>
+                <a class="project-link" href="https://github.com/minalear">Repo</a>
+              </div>
+            </div>
+            <div class="project-card">
+              <img class="project-image" src="https://via.placeholder.com/150" alt="placeholder image" />
+              <div class="project-details">
+                <span class="project-title">Project Title</span>
+                <p class="project-description">This is a brief project description.</p>
+                <a class="project-link" href="https://github.com/minalear">Repo</a>
+              </div>
+            </div>
+            <div class="project-card">
+              <img class="project-image" src="https://via.placeholder.com/150" alt="placeholder image" />
+              <div class="project-details">
+                <span class="project-title">Project Title</span>
+                <p class="project-description">This is a brief project description.</p>
+                <a class="project-link" href="https://github.com/minalear">Repo</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia commodo est nec pharetra. Donec ut consequat dolor, id ornare nisl. Aliquam in ligula sit amet magna tincidunt placerat. Vestibulum urna urna, porta ac odio et, ornare interdum ante. Vivamus consequat ac felis venenatis bibendum. Phasellus dictum convallis magna, quis dictum libero eleifend a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra vulputate velit a vulputate. Proin auctor blandit venenatis. Proin suscipit aliquam purus, malesuada auctor elit tempus vel. Vestibulum eu lectus convallis est scelerisque congue.</p>
+        <p>Aliquam eleifend orci dapibus vulputate mattis. Mauris iaculis eros nulla, vel dignissim dui congue id. Vivamus dapibus vitae magna eu suscipit. Sed tempor ultricies orci, eu suscipit libero tincidunt sit amet. Nunc a condimentum velit, et pellentesque turpis. Nullam varius tortor vitae velit venenatis interdum nec a ipsum. Aliquam viverra ex libero, a feugiat tellus varius vitae. Donec ac dui gravida, gravida eros quis, semper augue.</p>
+        <p>Nullam id mi libero. Praesent id facilisis velit, vel euismod odio. Duis et rhoncus ex. Fusce vel massa tellus. Sed convallis aliquet fringilla. In lobortis, justo a rutrum scelerisque, purus velit condimentum magna, sit amet vulputate dolor velit eu libero. Morbi sit amet eros a tellus posuere facilisis. Proin interdum fringilla tortor, eget sagittis augue imperdiet vestibulum. Nullam dapibus a nunc et vehicula. Maecenas quis faucibus lectus. Nunc eget nibh id dui varius aliquet.</p>
+        <h2>Como esta?</h2>
+        <p>In vitae arcu sed ipsum pharetra elementum. Vestibulum a luctus tortor, sit amet facilisis ligula. Sed felis neque, euismod a ex vel, lacinia scelerisque ligula. Fusce molestie risus in arcu volutpat, ut ullamcorper nisi faucibus. Proin pulvinar leo at erat vestibulum, at auctor magna blandit. Pellentesque volutpat, neque vel luctus faucibus, turpis tortor molestie nulla, porta finibus nulla quam at massa. Pellentesque laoreet quis ex quis gravida. Duis non scelerisque sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porttitor lorem et augue fringilla scelerisque. Morbi accumsan elit nisi, id vestibulum lectus luctus ut. Vivamus hendrerit mauris sem, et tincidunt leo ultrices ut.</p>
+        <p>Cras varius placerat mi, eget imperdiet nisl viverra in. Morbi ut rhoncus justo. Phasellus sit amet turpis in odio rhoncus malesuada in sed odio. Aenean viverra ligula velit, vel sagittis velit semper in. Aenean vehicula semper ex vitae luctus. Nunc massa est, commodo vel libero eu, placerat convallis augue. Morbi sollicitudin id eros non iaculis. Quisque luctus tristique efficitur. Nullam vehicula, ipsum sed tempus tempus, orci augue pellentesque nulla, sed hendrerit risus nibh non nisl. Nam dignissim euismod tortor nec sollicitudin. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia commodo est nec pharetra. Donec ut consequat dolor, id ornare nisl. Aliquam in ligula sit amet magna tincidunt placerat. Vestibulum urna urna, porta ac odio et, ornare interdum ante. Vivamus consequat ac felis venenatis bibendum. Phasellus dictum convallis magna, quis dictum libero eleifend a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra vulputate velit a vulputate. Proin auctor blandit venenatis. Proin suscipit aliquam purus, malesuada auctor elit tempus vel. Vestibulum eu lectus convallis est scelerisque congue.</p>
+        <p>Aliquam eleifend orci dapibus vulputate mattis. Mauris iaculis eros nulla, vel dignissim dui congue id. Vivamus dapibus vitae magna eu suscipit. Sed tempor ultricies orci, eu suscipit libero tincidunt sit amet. Nunc a condimentum velit, et pellentesque turpis. Nullam varius tortor vitae velit venenatis interdum nec a ipsum. Aliquam viverra ex libero, a feugiat tellus varius vitae. Donec ac dui gravida, gravida eros quis, semper augue.</p>
+        <p>Nullam id mi libero. Praesent id facilisis velit, vel euismod odio. Duis et rhoncus ex. Fusce vel massa tellus. Sed convallis aliquet fringilla. In lobortis, justo a rutrum scelerisque, purus velit condimentum magna, sit amet vulputate dolor velit eu libero. Morbi sit amet eros a tellus posuere facilisis. Proin interdum fringilla tortor, eget sagittis augue imperdiet vestibulum. Nullam dapibus a nunc et vehicula. Maecenas quis faucibus lectus. Nunc eget nibh id dui varius aliquet.</p>
+        <p>In vitae arcu sed ipsum pharetra elementum. Vestibulum a luctus tortor, sit amet facilisis ligula. Sed felis neque, euismod a ex vel, lacinia scelerisque ligula. Fusce molestie risus in arcu volutpat, ut ullamcorper nisi faucibus. Proin pulvinar leo at erat vestibulum, at auctor magna blandit. Pellentesque volutpat, neque vel luctus faucibus, turpis tortor molestie nulla, porta finibus nulla quam at massa. Pellentesque laoreet quis ex quis gravida. Duis non scelerisque sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porttitor lorem et augue fringilla scelerisque. Morbi accumsan elit nisi, id vestibulum lectus luctus ut. Vivamus hendrerit mauris sem, et tincidunt leo ultrices ut.</p>
+        <p>Cras varius placerat mi, eget imperdiet nisl viverra in. Morbi ut rhoncus justo. Phasellus sit amet turpis in odio rhoncus malesuada in sed odio. Aenean viverra ligula velit, vel sagittis velit semper in. Aenean vehicula semper ex vitae luctus. Nunc massa est, commodo vel libero eu, placerat convallis augue. Morbi sollicitudin id eros non iaculis. Quisque luctus tristique efficitur. Nullam vehicula, ipsum sed tempus tempus, orci augue pellentesque nulla, sed hendrerit risus nibh non nisl. Nam dignissim euismod tortor nec sollicitudin. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia commodo est nec pharetra. Donec ut consequat dolor, id ornare nisl. Aliquam in ligula sit amet magna tincidunt placerat. Vestibulum urna urna, porta ac odio et, ornare interdum ante. Vivamus consequat ac felis venenatis bibendum. Phasellus dictum convallis magna, quis dictum libero eleifend a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra vulputate velit a vulputate. Proin auctor blandit venenatis. Proin suscipit aliquam purus, malesuada auctor elit tempus vel. Vestibulum eu lectus convallis est scelerisque congue.</p>
+        <p>Aliquam eleifend orci dapibus vulputate mattis. Mauris iaculis eros nulla, vel dignissim dui congue id. Vivamus dapibus vitae magna eu suscipit. Sed tempor ultricies orci, eu suscipit libero tincidunt sit amet. Nunc a condimentum velit, et pellentesque turpis. Nullam varius tortor vitae velit venenatis interdum nec a ipsum. Aliquam viverra ex libero, a feugiat tellus varius vitae. Donec ac dui gravida, gravida eros quis, semper augue.</p>
+        <p>Nullam id mi libero. Praesent id facilisis velit, vel euismod odio. Duis et rhoncus ex. Fusce vel massa tellus. Sed convallis aliquet fringilla. In lobortis, justo a rutrum scelerisque, purus velit condimentum magna, sit amet vulputate dolor velit eu libero. Morbi sit amet eros a tellus posuere facilisis. Proin interdum fringilla tortor, eget sagittis augue imperdiet vestibulum. Nullam dapibus a nunc et vehicula. Maecenas quis faucibus lectus. Nunc eget nibh id dui varius aliquet.</p>
+        <p>In vitae arcu sed ipsum pharetra elementum. Vestibulum a luctus tortor, sit amet facilisis ligula. Sed felis neque, euismod a ex vel, lacinia scelerisque ligula. Fusce molestie risus in arcu volutpat, ut ullamcorper nisi faucibus. Proin pulvinar leo at erat vestibulum, at auctor magna blandit. Pellentesque volutpat, neque vel luctus faucibus, turpis tortor molestie nulla, porta finibus nulla quam at massa. Pellentesque laoreet quis ex quis gravida. Duis non scelerisque sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porttitor lorem et augue fringilla scelerisque. Morbi accumsan elit nisi, id vestibulum lectus luctus ut. Vivamus hendrerit mauris sem, et tincidunt leo ultrices ut.</p>
+        <p>Cras varius placerat mi, eget imperdiet nisl viverra in. Morbi ut rhoncus justo. Phasellus sit amet turpis in odio rhoncus malesuada in sed odio. Aenean viverra ligula velit, vel sagittis velit semper in. Aenean vehicula semper ex vitae luctus. Nunc massa est, commodo vel libero eu, placerat convallis augue. Morbi sollicitudin id eros non iaculis. Quisque luctus tristique efficitur. Nullam vehicula, ipsum sed tempus tempus, orci augue pellentesque nulla, sed hendrerit risus nibh non nisl. Nam dignissim euismod tortor nec sollicitudin. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
