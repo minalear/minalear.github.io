@@ -26,6 +26,7 @@ ul {
   height: 40px;
   display: flex;
   align-items: center;
+  z-index: 10;
 }
 
 .warning-banner span {
