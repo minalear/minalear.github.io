@@ -14,7 +14,7 @@ ul {
   height: 100vh;
 }
 
-@media only screen and (min-device-width: 1024px) {
+@media (min-width: 1024px) {
   .site-wrapper {
     display: grid;
     grid-template-columns: 300px calc(100% - 300px);
@@ -156,7 +156,7 @@ ul {
   padding-top: 80px;
 }
 
-@media only screen and (max-device-width: 1024px) {
+@media (max-width: 1024px) {
   .hero {
     padding-top: 25px;
   }
@@ -181,7 +181,7 @@ section > h2 {
 }
 
 /* EDUCATION */
-@media only screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
   .education-wrapper {
     display: flex;
   }
@@ -231,7 +231,7 @@ section > h2 {
   min-width: 450px;
 }
 
-@media only screen and (max-width: 400px) {
+@media (max-width: 400px) {
   .project-card {
     min-width: 325px;
     min-height: 200px;
