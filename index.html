@@ -38,10 +38,10 @@
       </div>
       <nav class="navigation">
         <ul class="site-nav">
-          <li><a class="nav-link" href="#">Home</a></li>
-          <li><a class="nav-link" href="#">Projects</a></li>
-          <li><a class="nav-link" href="#">About</a></li>
-          <li><a class="nav-link" href="#">Contact</a></li>
+          <li><a class="nav-link" href="/">Home</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
         <ul class="social-links">
           <li>
@@ -63,13 +63,13 @@
           <h1 class="title">Hi!  I'm Trevor Fisher.</h1>
           <span class="subtitle">I am a software developer and recent college graduate.</span>
         </section>
-        <section class="about">
+        <section id="about" class="about">
           <h2>About</h2>
           <p>Trevor Fisher, graduated from the University of Central Oklahoma in May 2021, with a Bachelors of Science.  I majored in Computer Science with a minor in Mathematics.</p>
           <p>I take great pride in the software I write and the projects I create.  I have experience writing web applications using React or Vue on top of an Express backend with MongoDB.</p>
           <strong>Some content on this page has yet to be fully updated.</strong>
         </section>
-        <section class="education">
+        <section id="education" class="education">
           <h2>Education</h2>
           <span class="education-wrapper">
             <p class="year-range">2013 - 2021</p>
@@ -81,10 +81,18 @@
             </div>
           </span>
         </section>
-        <!--<section class="knowledge">
+        <section id="knowledge" class="knowledge">
           <h2>Knowledge</h2>
-        </section>-->
-        <section class="projects">
+          <ul>
+            <li>
+              <h3 class="list-title">Programming Languages</h3>
+              <p class="list-body">C&plus;&plus;, C&num;, Javascript, Python, Rust</p>
+              <h3 class="list-title">Other Technologies</h3>
+              <p class="list-body">HTML5, CSS3, RESTful APIs<br>React/Redux, Vue<br>MongoDB, SQL<br>Google Cloud APIs/Firebase<br>Flutter with Dart</p>
+            </li>
+          </ul>
+        </section>
+        <section id="projects" class="projects">
           <h2>Projects</h2>
           <div class="projects-wrapper">
             <div class="project-card">
@@ -92,7 +100,7 @@
               <div class="project-details">
                 <span class="project-title">Veteran Support</span>
                 <p class="project-description">Mobile app created with Dart/Flutter that helps Veterans manage medications and appointments.</p>
-                <span class="project-link unavailable">Repo</span>
+                <a class="project-link" href="https://github.com/mcowden1/sdad_project">Repo</a>
               </div>
             </div>
             <div class="project-card">
@@ -121,7 +129,7 @@
             </div>
           </div>
         </section>
-        <section class="contact">
+        <section id="contact" class="contact">
           <h2>Contact Details</h2>
           <p>To get in touch with me, feel free to email me at <span class="email-link">trevor.k.fisher@gmail.com</span>.  I'll be happy to reply with more information and my resume!</p>
         </section>
